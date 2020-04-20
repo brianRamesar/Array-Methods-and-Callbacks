@@ -12,12 +12,62 @@ console.log(fifaData);
 (d) Away Team goals for 2014 world cup final
 (e) Winner of 2014 world cup final */
 
+const twentyFourteen = fifaData.filter(function(item){
+    return item.Year === 2014;
+})
+const fourteenHome = twentyFourteen.map(function(item){
+    return item["Home Team Name"];
+})
+console.log(fourteenHome);
+// (a)
+
+const twentyFrteen = fifaData.filter(function(item){
+    return item.Year === 2014;
+})
+const frteenAway = twentyFrteen.map(function(item){
+    return item["Away Team Name"];
+})
+console.log(frteenAway);
+//(b)
+
+const twntyFourteen = fifaData.filter(function(item){
+    return item.Year === 2014;
+})
+const fourteenHomeGoals = twntyFourteen.map(function(item){
+    return item["Home Team Goals"];
+})
+console.log(fourteenHomeGoals);
+//(c)
+
+function awayTeamGoals(){
+    const twentyFourteen = fifaData.filter(function(item){
+        return item.Year === 2014;
+    })
+    return twentyFourteen.map(function(item){
+        return item["Away Team Goals"];
+    })
+    
+}
+console.log(awayTeamGoals()); 
+//(d)
+
+function twentyFourteenWinner(){
+    const twentyFourteen = fifaData.filter(function(item){
+        return item.Year === 2014;
+    })
+    console.log(twentyFourteen);
+    
+    
+}
+console.log(twentyFourteenWinner());
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
-function getFinals(/* code here */) {
+function getFinals(data) {
 
-    /* code here */
+    console.log(data);
+
+
 
 };
 
